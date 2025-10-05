@@ -62,13 +62,13 @@ html, body {
 }
 
 .tag {
-  background: var(--chip);
-  border: 1px solid #2f3238;
-  color: var(--muted);
-  font-size: 12px;
-  padding: 4px 8px;
-  border-radius: 14px;
-  line-height: 1;
+   background: var(--chip);
+   border: 1px solid #2f3238;
+   color: var(--muted);
+   font-size: 12px;
+   padding: 4px 8px;
+   border-radius: 14px;
+   line-height: 1;
+   cursor: default;
+   pointer-events: none;   /* no hover/press states */
 }
-
-.tag:hover { border-color: var(--accent-2); color: var(--text); }
