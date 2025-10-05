@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+N:León;Kevin;;;
+FN:Kevin León
+ORG:IE Madrid
+TITLE:Student
+EMAIL;TYPE=INTERNET,PREF:kevinleonjouvin@gmail.com
+TEL;TYPE=CELL:+34 611 779 374
+URL:https://www.linkedin.com/in/kevinleonj
+END:VCARD

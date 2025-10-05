@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>{{ full_name }} — Contact</title>
+    <meta name="description" content="Contact card for {{ full_name }}.">
+    <meta name="theme-color" content="#111111">
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="preload" href="/static/images/me.jpg" as="image">
+    <meta property="og:title" content="{{ full_name }} — Contact">
+    <meta property="og:description" content="{{ tagline }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ base_url }}">
+    <meta property="og:image" content="{{ base_url }}/static/images/me.jpg">
+  </head>
+  <body>
+    <main class="page">
+      {% block content %}{% endblock %}
+    </main>
+    <script src="/static/js/app.js" defer></script>
+  </body>
+</html>

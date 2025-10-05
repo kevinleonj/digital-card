@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="card">
+  <img class="avatar" src="/static/images/me.jpg" alt="{{ full_name }} headshot">
+  <h1 class="name">{{ full_name }}</h1>
+  <p class="tagline">{{ tagline }}</p>
+
+  <div class="audience">
+    <a class="chip {% if audience == 'friend' %}chip-hot{% endif %}" href="/f" aria-label="Switch to friends view">Friend</a>
+    <a class="chip {% if audience == 'recruiter' %}chip-hot{% endif %}" href="/r" aria-label="Switch to recruiter view">Recruiter</a>
+  </div>
+
+  <div class="fact">
+    <h2 class="fact-title">Quick fact</h2>
+    <p class="fact-text">{{ fact }}</p>
+  </div>
+
+  <nav class="links">
+    {% for link in links %}
+      <a id="{{ link.id }}" class="btn" role="button" tabindex="0" aria-label="{{ link.label }}" href="{{ link.href }}" target="_blank" rel="noopener noreferrer">{{ link.label }}</a>
+    {% endfor %}
+  </nav>
+
+  <div class="qr-help">
+    <p>Use these short links for QR codes:</p>
+    <ul>
+      <li><strong>Friend (default):</strong> {{ base_url }}/</li>
+      <li><strong>Recruiter:</strong> {{ base_url }}/r</li>
+    </ul>
+  </div>
+
+  <footer class="footer">
+    <p>Session-safe. No tracking. Cookies only to vary facts per visit.</p>
+  </footer>
+</section>
+{% endblock %}
