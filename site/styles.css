@@ -21,15 +21,12 @@ html, body {
 .avatar { width: 112px; height: 112px; border-radius: 50%; display: block; margin: 0 auto 12px; object-fit: cover; border: 3px solid #26282d; }
 .name { text-align: center; font-size: 24px; margin: 4px 0; }
 .tagline {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2px;
-  margin-bottom: 16px;
   text-align: center;
   color: var(--muted);
   font-size: 14px;
   line-height: 1.35;
+  margin: 0 0 12px 0;
+  text-wrap: balance;
 }
 
 .tagline .line.work { color: var(--text); font-weight: 500; }
@@ -64,7 +61,6 @@ html, body {
   margin: 8px 0 12px 0;
 }
 
-/* reuse chip look, but smaller */
 .tag {
   background: var(--chip);
   border: 1px solid #2f3238;
@@ -75,5 +71,4 @@ html, body {
   line-height: 1;
 }
 
-/* subtle hover for discoverability */
 .tag:hover { border-color: var(--accent-2); color: var(--text); }
