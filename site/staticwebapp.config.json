@@ -1,0 +1,18 @@
+{
+  "navigationFallback": {
+    "rewrite": "index.html",
+    "exclude": ["/images/*", "/cv/*", "/favicon.ico", "/robots.txt", "/assets/*"]
+  },
+  "routes": [
+    { "route": "/",  "rewrite": "/index.html" },
+    { "route": "/f", "rewrite": "/index.html" },
+    { "route": "/r", "rewrite": "/index.html" }
+  ],
+  "globalHeaders": {
+    "Content-Security-Policy": "default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'; upgrade-insecure-requests",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "DENY",
+    "Permissions-Policy": "geolocation=(), microphone=(), camera=()"
+  }
+}

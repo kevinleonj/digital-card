@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Kevin León — Contact</title>
+  <meta name="description" content="Tap to connect with Kevin León.">
+  <meta name="theme-color" content="#111111">
+  <link rel="stylesheet" href="./styles.css">
+  <meta property="og:title" content="Kevin León — Contact">
+  <meta property="og:description" content="IE Madrid • MSFT alum • Tech, Business, Dogs, Photography">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/images/friend.jpg">
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <img class="avatar" id="avatar" src="/images/friend.jpg" alt="Kevin León headshot">
+      <h1 class="name">Kevin León</h1>
+      <p class="tagline">IE Madrid • MSFT alum • Tech + Business</p>
+
+      <!-- Audience chips -->
+      <div class="audience">
+        <a class="chip" id="chip-friend" href="/f" aria-label="Switch to friends view">Friend</a>
+        <a class="chip" id="chip-recruiter" href="/r" aria-label="Switch to recruiter view">Recruiter</a>
+      </div>
+
+      <!-- Optional joke block; shown only if enabled by JS -->
+      <div class="fact" id="joke-wrap" hidden>
+        <h2 class="fact-title">Dad-joke to make you smile</h2>
+        <p class="fact-text" id="joke-text"></p>
+      </div>
+
+      <!-- Links render here -->
+      <nav class="links" id="links"></nav>
+
+      <!-- QR helper text; optional for printouts -->
+      <div class="qr-help">
+        <ul>
+          <li><strong>Friend (default):</strong> <span id="url-friend"></span></li>
+          <li><strong>Recruiter:</strong> <span id="url-recruiter"></span></li>
+        </ul>
+      </div>
+
+      <footer class="footer"><p>No tracking. No forms. Pure static.</p></footer>
+    </section>
+  </main>
+  <script src="./app.js" defer></script>
+</body>
+</html>
